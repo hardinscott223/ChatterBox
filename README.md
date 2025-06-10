@@ -1,2 +1,2 @@
 # ChatterBox
-Chatting platform using WebSockets (Socket.io) and NodeJS
+Chatting platform using WebSockets (Socket.io) + Node.js + Express + EJS
