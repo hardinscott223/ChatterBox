@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../components/header') %>
+  <body>
+    <%- include('../components/navbar') %> <%- include('../components/story') %>
+
+    <div class="flex flex-wrap h-[calc(100%-navbar_height)]">
+      <div class="w-full md:w-1/6 bg-gray-400 md:h-120">
+        <div class="p-4">
+          <div class="mb-3">
+            <a
+              href="#"
+              class="hover:bg-indigo-700 hover:text-white rounded-full px-4 py-1"
+              >Recent</a
+            >
+            <a
+              href="#"
+              class="hover:bg-indigo-700 hover:text-white rounded-full px-4 py-1"
+              >filter</a
+            >
+            <a
+              href="#"
+              class="hover:bg-indigo-700 hover:text-white rounded-full px-4 py-1"
+              >New</a
+            >
+          </div>
+          <div class="border hover:border-red-900 p-2 h-20 rounded-2xl">
+            <a
+              href=""
+              class="border border-gray-900 w-12 rounded-full h-16 w-16 items-center"
+              >image</a
+            >
+            <span>Arkar</span>
+            <span>text</span>
+          </div>
+          <div class="border hover:border-red-900 p-2 h-20 rounded-2xl">
+            <a
+              href=""
+              class="border border-gray-900 w-12 rounded-full h-16 w-16 items-center"
+              >image</a
+            >
+            <span>Frank</span>
+            <span>text</span>
+          </div>
+          <div class="border hover:border-red-900 p-2 h-20 rounded-2xl">
+            <a
+              href=""
+              class="border border-gray-900 w-12 rounded-full h-16 w-16 items-center"
+              >image</a
+            >
+            <span>Mo</span>
+            <span>text</span>
+          </div>
+          <div class="border hover:border-red-900 p-2 h-20 rounded-2xl">
+            <a
+              href=""
+              class="border border-gray-900 w-12 rounded-full h-16 w-16 items-center"
+              >image</a
+            >
+            <span>Mo</span>
+            <span>text</span>
+          </div>
+          <div class="border hover:border-red-900 p-2 h-20 rounded-2xl">
+            <a
+              href=""
+              class="border border-gray-900 w-12 rounded-full h-16 w-16 items-center"
+              >image</a
+            >
+            <span>Mo</span>
+            <span>text</span>
+          </div>
+          <div class="border hover:border-red-900 p-2 h-20 rounded-2xl">
+            <a
+              href=""
+              class="border border-gray-900 w-12 rounded-full h-16 w-16 items-center"
+              >image</a
+            >
+            <span>Mo</span>
+            <span>text</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-5/6 bg-gray-100 md:h-120">
+        <div class="bg-gray-500 text-white h-16 p-4">
+          <div>
+            <a
+              href=""
+              class="flex border-2 border-gray-300 rounded-full w-12 h-12"
+            ></a>
+          </div>
+          <input type="text" id="handle" class="text-gray-500" />
+          <a href="#"><i class="fa-solid fa-video"></i></a>
+          <a href="#"><i class="fa-solid fa-phone"></i></a>
+          <a href="#"><i class="fa-solid fa-gear"></i></a>
+        </div>
+        <div class="md:h-96" id="output"></div>
+        <div id="typing" class="text-gray-500 italic text-sm mb-2"></div>
+        <input type="text" class="w-full md:w-5/6 h-16" id="message" />
+        <button class="bg-blue-500 text-white p-2 text-sm" id="send">
+          SEND
+        </button>
+      </div>
+    </div>
+    <script src="chat.js"></script>
+  </body>
+</html>

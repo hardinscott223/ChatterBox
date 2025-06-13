@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../components/header') %>
+  <body>
+    <%- include('../components/navbar') %>
+    <h1>Groups Chat</h1>
+    <div class="flex flex-wrap h-[calc(100%-navbar_height)]">
+      <div class="w-full md:w-1/6 bg-gray-500 h-full overflow-y-auto">
+        <div class="p-4">
+          <span
+            class="hover:bg-blue-300 rounded-full px-4 py-1 text-center w-32"
+            >Recent</span
+          >
+          <span
+            class="hover:bg-blue-300 rounded-full px-4 py-1 text-center w-32"
+            >filter</span
+          >
+          <span
+            class="hover:bg-blue-300 rounded-full px-4 py-1 text-center w-32"
+            >NewChat</span
+          >
+          <div>
+            <span>image</span>
+            <span>Name</span>
+            <span>text</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-5/6 bg-gray-100 h-full overflow-y-auto">
+        <span>image</span>
+        <span>Name</span>
+        <span>text</span>
+        <span>VC</span>
+        <span>PH</span>
+        <span>setting</span>
+        <span>chat bg</span>
+        <div>text field</div>
+        <div id="typing-indicator" class="text-gray-500 italic text-sm mb-2">
+          Someone is typing...
+        </div>
+        <input type="text" class="w-full md:w-5/6 h-16" />
+        <button class="bg-blue-500 text-white p-2 text-sm">SEND</button>
+      </div>
+    </div>
+  </body>
+</html>
